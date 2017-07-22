@@ -1,17 +1,23 @@
-import React from 'react';
-import { Text, TouchableOpacity } from 'react-native';
+/**
+ * Created by poc on 7/15/17.
+ */
 
-const Button = ({ onPress, children }) => {
-    const { buttonStyle, textStyle } = styles;
+import React from 'react';
+import {Text, TouchableOpacity, View} from 'react-native';
+
+
+const AlbumButton = ({onPress}) => {
+    const {buttonStyle, textStyle} = styles;
 
     return (
         <TouchableOpacity onPress={onPress} style={buttonStyle}>
             <Text style={textStyle}>
-                {children}
+                Click me!
             </Text>
         </TouchableOpacity>
-    );
-};
+
+    )
+}
 
 const styles = {
     textStyle: {
@@ -34,4 +40,5 @@ const styles = {
     }
 };
 
-export { Button };
+
+export default AlbumButton

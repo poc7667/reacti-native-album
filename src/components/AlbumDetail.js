@@ -2,7 +2,7 @@ import React from 'react';
 import {Image, Text, View, Linking} from "react-native";
 import Card from "./Card";
 import CardSection from "./CardSection";
-import AlbumButton from "./Button";
+import AlbumButton from "./AlbumButton";
 
 const AlbumDetail = (props) => {
     console.log(JSON.stringify(props))
